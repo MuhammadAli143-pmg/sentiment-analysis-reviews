@@ -4,7 +4,7 @@ from pipeline_utils import clean_text
 
 @st.cache_resource
 def load_model():
-    return joblib.load('artifacts/sentiment_model.joblib')
+    return joblib.load('sentiment_model.joblib')
 
 st.set_page_config(page_title='Customer Review Sentiment',page_icon='💬',layout='centered')
 st.title('💬 Customer Review Sentiment Analyzer')
